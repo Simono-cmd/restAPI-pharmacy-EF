@@ -1,0 +1,26 @@
+@Tutorial5_HostAddress = http://localhost:5109
+
+
+###
+
+POST http://localhost:5109/api/prescription
+Content-Type: application/json
+
+{
+"patient": {"IdPatient": 4,
+"FirstName": "Jan",
+"LastName": "Piotrowicz",
+"Birthdate": "1968-05-05"
+},
+"medicaments": [
+{"idMedicament": 1, "Dose": 3, "Details":
+"Some desc..." }
+],
+"Date": "2012-01-01",
+"DueDate": "2012-01-01",
+"IdDoctor": 1
+}
+
+
+###
+GET http://localhost:5109/api/4
